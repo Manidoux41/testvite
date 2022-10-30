@@ -1,13 +1,9 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { Layout, Home, Services, Portfolio, Contact } from '../../pages/Public'
 import Error from '../../utils/Error'
-import Contact from './Contact'
-import Home from './Home'
-import Layout from './Layout'
-import Portfolio from './Portfolio'
-import Services from './Services'
 
-const PublicRoute = () => {
+const PublicRouter = () => {
   return (
     <Routes>
           <Route element={<Layout />}>
@@ -25,4 +21,4 @@ const PublicRoute = () => {
   )
 }
 
-export default PublicRoute
+export default PublicRouter
