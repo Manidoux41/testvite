@@ -1,13 +1,14 @@
 import React from 'react'
-import Logo from '../assets/logo.png'
+import Logo from '../../assets/logo.png'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
+    <>
         <header>
             <div className="logo">
                 <h1>My Portfolio</h1>
-                <img src={Logo} alt="my logo" />
+                <img src={Logo} alt="" />
             </div>
             <nav>
                 <ul>
@@ -25,7 +26,8 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-        </header>
+        </header>    
+    </>
     )
 }
 
