@@ -49,4 +49,14 @@ header nav ul {
   gap: 10px;
 }
 
+#admin {
+  display: flex;
+}
+#admin .SideMenu {
+  flex-grow: 1;
+}
+#admin #admin__body {
+  flex-grow: 6;
+}
+
 /*# sourceMappingURL=main.css.map */

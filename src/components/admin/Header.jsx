@@ -3,11 +3,16 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <div className='AHeader'>
-      <li>
-        <NavLink to='/administrator/dashboard'>Dashboard</NavLink>
-      </li>
-    </div>
+    <header>
+      <h2>Dashboard</h2>
+      <nav>
+        <ul>
+          <li>
+            <NavLink to='/'>Retour à l'accueil</NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   )
 }
 
