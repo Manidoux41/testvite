@@ -16,8 +16,7 @@ const PublicRouter = () => {
 
             <Route path='*' element={<Error />}/>
           </Route>
-
-        </Routes>
+      </Routes>
   )
 }
 

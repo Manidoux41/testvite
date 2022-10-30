@@ -1,12 +1,16 @@
 import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import AdminRouter from './pages/Admin/AdminRouter'
 import PublicRouter from './pages/Public/PublicRouter'
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
-        <PublicRouter />
+        <Routes>
+          <Route path='/*' element={<PublicRouter />} />
+          <Route path='/admin/*' element={<AdminRouter />} />
+        </Routes>
       </BrowserRouter>      
     </div>
     )
