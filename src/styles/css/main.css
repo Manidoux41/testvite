@@ -10,4 +10,43 @@ body {
   margin: 0 auto;
 }
 
+.App {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5px;
+  background: #E2ADF2;
+  border-bottom: 1px solid #654597;
+  margin-bottom: 25px;
+}
+header .logo {
+  display: flex;
+  flex-direction: column;
+}
+header .logo img {
+  object-fit: cover;
+  height: 50px;
+  width: auto;
+}
+header nav {
+  display: block;
+  align-self: center;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /*# sourceMappingURL=main.css.map */

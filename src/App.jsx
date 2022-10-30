@@ -1,20 +1,26 @@
 import React from 'react'
-import Logo from './assets/logo.png'
 import Home from './pages/Home'
 import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 
 const App = () => {
   return (
     <div className="App">
-      <h1>My Portfolio</h1>
-      <img src={Logo} alt="my logo" />
-      <Home />
-      <Services />
-      <Portfolio />
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home />} />
+
+          <Route path='/home' element={<Home />}/>
+          <Route path='/services' element={<Services />}/>
+          <Route path='/portfolio' element={<Portfolio />}/>
+          <Route path='/contact' element={<Contact />}/>
+
+          <Route path='*' element={<Home />}/>
+        </Routes>
+      </BrowserRouter>      
     </div>
     )
 }

@@ -1,10 +1,12 @@
 import React from 'react'
+import Header from '../components/Header'
 
 const Portfolio = () => {
   return (
-    <div>
+    <>
+        <Header />
         <h2>Portfolio Works</h2>
-    </div>
+    </>
   )
 }
 
