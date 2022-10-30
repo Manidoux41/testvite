@@ -4,7 +4,6 @@ import Header from '../components/Header'
 const Contact = () => {
   return (
     <>
-        <Header />
         <h2>Contact Works</h2>
     </>
   )

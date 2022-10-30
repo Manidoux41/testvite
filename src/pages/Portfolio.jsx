@@ -4,7 +4,6 @@ import Header from '../components/Header'
 const Portfolio = () => {
   return (
     <>
-        <Header />
         <h2>Portfolio Works</h2>
     </>
   )

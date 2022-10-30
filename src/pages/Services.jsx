@@ -4,7 +4,6 @@ import Header from '../components/Header'
 const Services = () => {
   return (
     <>
-        <Header />
         <h2>Service Works</h2>
     </>
   )

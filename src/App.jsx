@@ -4,6 +4,8 @@ import Services from './pages/Services'
 import Portfolio from './pages/Portfolio'
 import Contact from './pages/Contact'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Layout from './pages/Layout'
+import Error from './utils/Error'
 
 
 const App = () => {
@@ -11,14 +13,17 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Home />} />
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
 
-          <Route path='/home' element={<Home />}/>
-          <Route path='/services' element={<Services />}/>
-          <Route path='/portfolio' element={<Portfolio />}/>
-          <Route path='/contact' element={<Contact />}/>
+            <Route path='/home' element={<Home />}/>
+            <Route path='/services' element={<Services />}/>
+            <Route path='/portfolio' element={<Portfolio />}/>
+            <Route path='/contact' element={<Contact />}/>
 
-          <Route path='*' element={<Home />}/>
+            <Route path='*' element={<Error />}/>
+          </Route>
+
         </Routes>
       </BrowserRouter>      
     </div>
