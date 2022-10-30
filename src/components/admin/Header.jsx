@@ -1,9 +1,12 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
     <div className='AHeader'>
-      header
+      <li>
+        <NavLink to='/administrator/dashboard'>Dashboard</NavLink>
+      </li>
     </div>
   )
 }
