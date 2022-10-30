@@ -9,7 +9,7 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path='/*' element={<PublicRouter />} />
-          <Route path='/administrator/*' element={<AdminRouter />} />
+          <Route path='administrator/*' element={<AdminRouter />} />
         </Routes>
       </BrowserRouter>      
     </div>
