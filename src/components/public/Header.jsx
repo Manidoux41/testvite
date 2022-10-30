@@ -24,6 +24,9 @@ const Header = () => {
                     <li>
                         <NavLink to='/contact'>Contact</NavLink>
                     </li>
+                    <li>
+                        <NavLink to='/administrator'>admin</NavLink>
+                    </li>
                 </ul>
             </nav>
         </header>    
